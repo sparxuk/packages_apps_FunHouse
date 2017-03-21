@@ -26,6 +26,11 @@
         android:targetClass="com.android.settings.applications.appops.AppOpsSummary" />
     </Preference>
 
+    <PreferenceScreen
+        android:key="suspend_actions"
+        android:title="@string/screen_state_toggles_title"
+        android:fragment="com.gzr.wolvesden.fragments.SuspendActions" />
+
     <Preference
         android:key="powermenu"
         android:fragment="com.gzr.wolvesden.fragments.PowerMenu"
