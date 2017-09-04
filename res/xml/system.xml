@@ -40,6 +40,11 @@
         android:fragment="com.gzr.wolvesden.fragments.ScreenOffAnimations"
         android:title="@string/screen_off_category_title" />
 
+    <Preference
+        android:key="leds"
+        android:fragment="com.gzr.wolvesden.fragments.LedSettings"
+        android:title="@string/leds_title" />
+
     <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
         android:key="toast_icon"
         android:title="@string/toast_icon_title"
