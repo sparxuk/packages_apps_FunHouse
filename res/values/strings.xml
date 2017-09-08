@@ -282,5 +282,8 @@
 
     <!-- Statusbar Tuner -->
     <string name="statusbar_items_title">Statusbar items</string>
+
+    <!-- Navbar tuner -->
+    <string name="navbar_tuner_title">Navbar layout</string>
     
 </resources>
