@@ -31,18 +31,12 @@ import android.support.v14.preference.SwitchPreference;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.internal.util.validus.ValidusUtils;
-import com.android.internal.logging.MetricsProto.MetricsEvent;
+import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.Utils;
 
 public class MultiTasking extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "MultiTasking";
-
-    private static final String KEY_OMNISWITCH = "omniswitch";
-    private static final String KEY_OMNI_SWITCH_PACKAGE_NAME = "org.omnirom.omniswitch";
-
-    private PreferenceScreen mOmniSwitch;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -51,17 +45,11 @@ public class MultiTasking extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.multitasking);
 
         ContentResolver resolver = getActivity().getContentResolver();
-        PreferenceScreen prefSet = getPreferenceScreen();
-
-        mOmniSwitch = (PreferenceScreen) findPreference(KEY_OMNISWITCH);
-        if (!ValidusUtils.isPackageInstalled(getActivity(), KEY_OMNI_SWITCH_PACKAGE_NAME)) {
-            prefSet.removePreference(mOmniSwitch);
-        }
     }
 
     @Override
-    protected int getMetricsCategory() {
-        return MetricsEvent.WOLVESDEN;
+    public int getMetricsCategory() {
+        return MetricsProto.MetricsEvent.VALIDUS;
     }
 
     @Override

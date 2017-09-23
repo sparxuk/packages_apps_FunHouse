@@ -31,16 +31,11 @@ import android.provider.Settings;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.internal.logging.MetricsProto.MetricsEvent;
-import com.android.internal.util.validus.ValidusUtils;
+import com.android.internal.logging.nano.MetricsProto;
 
 public class Lockscreen extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "Lockscreen";
-
-    private static final String KEYGUARD_TOGGLE_TORCH = "keyguard_toggle_torch";
-
-    private SwitchPreference mKeyguardTorch;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -50,20 +45,11 @@ public class Lockscreen extends SettingsPreferenceFragment implements
         PreferenceScreen prefSet = getPreferenceScreen();
 
         ContentResolver resolver = getActivity().getContentResolver();
-
-        mKeyguardTorch = (SwitchPreference) findPreference(KEYGUARD_TOGGLE_TORCH);
-        mKeyguardTorch.setOnPreferenceChangeListener(this);
-        if (!ValidusUtils.deviceSupportsFlashLight(getActivity())) {
-            prefSet.removePreference(mKeyguardTorch);
-        } else {
-        mKeyguardTorch.setChecked((Settings.System.getInt(resolver,
-                Settings.System.KEYGUARD_TOGGLE_TORCH, 0) == 1));
-        }
     }
 
     @Override
-    protected int getMetricsCategory() {
-        return MetricsEvent.WOLVESDEN;
+    public int getMetricsCategory() {
+        return MetricsProto.MetricsEvent.VALIDUS;
     }
 
     @Override
@@ -77,12 +63,7 @@ public class Lockscreen extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-        if  (preference == mKeyguardTorch) {
-            boolean checked = ((SwitchPreference)preference).isChecked();
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.KEYGUARD_TOGGLE_TORCH, checked ? 1:0);
-            return true;
-        }
-        return false;
+        final String key = preference.getKey();
+        return true;
     }
 }
