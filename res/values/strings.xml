@@ -38,4 +38,8 @@
     <string name="set">Set</string>
     <string name="color_default">Default</string>
 
+    <!-- toast switch -->
+    <string name="toast_icon_title">Toast icon</string>
+    <string name="toast_icon_summary">Display the app icon corresponding with the toast</string>
+
 </resources>
