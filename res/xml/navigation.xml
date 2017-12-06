@@ -19,4 +19,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <Preference
+        android:key="buttons"
+        android:fragment="com.gzr.funhouse.hwkeys.fragments.Buttons"
+        android:title="@string/buttons_title" />
+
 </PreferenceScreen>

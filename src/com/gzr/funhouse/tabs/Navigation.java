@@ -46,6 +46,10 @@ public class Navigation extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        addPreferencesFromResource(R.xml.navigation);
+
+        ContentResolver resolver = getActivity().getContentResolver();
     }
 
     @Override
