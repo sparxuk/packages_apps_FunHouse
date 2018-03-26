@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--  Copyright (C) 2014-2016 The Dirty Unicorns Project
+<!--  Copyright (C) 2018 AICP
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -17,15 +17,16 @@
 
 <resources>
 
-    <!-- Bottom navigation bar -->
-    <dimen name="design_bottom_navigation_text_size">9dp</dimen>
-    <dimen name="design_bottom_navigation_active_text_size">10dp</dimen>
+    <style name="SeekBarPreferenceChamValueTextAppearance" parent="@*android:style/TextAppearance.Toast" />
 
-    <!-- Shortcut picker -->
-    <dimen name="shortcut_picker_left_padding">70dip</dimen>
-
-    <!-- SeekBarPreferenceCham: offset of the value popup -->
-    <dimen name="seek_bar_preference_cham_value_x_offset">0dp</dimen>
-    <dimen name="seek_bar_preference_cham_value_y_offset">-16dp</dimen>
+    <!-- SeekBarPreferenceCham value popup -->
+    <style name="SeekBarPreferenceChamValueView">
+        <item name="android:textColor">?attr/value_popup_view_fg</item>
+        <item name="android:textAppearance">@style/SeekBarPreferenceChamValueTextAppearance</item>
+        <item name="android:background">@drawable/seekbar_popup_bg</item>
+        <item name="android:paddingHorizontal">24dp</item>
+        <item name="android:paddingVertical">15dp</item>
+        <item name="android:fitsSystemWindows">false</item>
+    </style>
 
 </resources>

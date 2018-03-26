@@ -40,6 +40,12 @@
     <string name="global_actions_advanced_reboot_title">Advanced restart</string>
     <string name="global_actions_advanced_reboot_summary">Show recovery and bootloader restart options</string>
 
+    <!-- SeekBar -->
+    <string name="seekbar_no_default_value">No default value set</string>
+    <string name="seekbar_default_value_set">Value set to default of <xliff:g id="number">%d</xliff:g></string>
+    <string name="seekbar_default_value_already_set">Default value is already set</string>
+    <string name="seekbar_default_string">Default</string>
+
     <!-- Audio Panel view  -->
     <string name="audio_panel_view">Audio panel</string>
     <string name="audio_panel_view_media_title">Media</string>
