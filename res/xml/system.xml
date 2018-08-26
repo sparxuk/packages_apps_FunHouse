@@ -90,4 +90,15 @@
         android:summary="@string/notification_guts_kill_app_button_summary"
         android:defaultValue="false" />
 
+    <PreferenceCategory
+        android:id="@+id/Wakelocks_category"
+        android:key="Wakelocks_category"
+        android:title="@string/wakelocks_title" />
+
+        <Preference 
+            android:key="wakelock_blocker"
+            android:fragment="com.gzr.wolvesden.fragments.WakeLockBlocker"
+            android:title="@string/wakelock_blocker_title"
+            android:summary="@string/wakelock_blocker_summary" />
+
 </PreferenceScreen>
