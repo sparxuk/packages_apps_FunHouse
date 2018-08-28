@@ -379,4 +379,9 @@
     <string name="flashlight_on_call_dnd">Blink flashlight only in DND mode</string>
     <string name="flashlight_on_call_always">Always blink flashlight</string>
 
+    <!-- QuickSettings Panel Transparency -->
+    <string name="qspanel_title">QS panel</string>
+    <string name="qs_panel_alpha_title">Quick Settings opacity</string>
+    <string name="qs_panel_alpha_summary">Configure opacity of background</string>
+
 </resources>
