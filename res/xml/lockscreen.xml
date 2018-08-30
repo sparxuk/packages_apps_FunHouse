@@ -36,5 +36,10 @@
         android:key="hide_lock_clock"
         android:title="@string/lockscreen_settings_category_title"
         android:fragment="com.gzr.wolvesden.fragments.LockScreenSettings" />  
+
+    <Preference
+        android:key="omnijaws_settings"
+        android:title="@string/weather_title"
+        android:fragment="com.gzr.wolvesden.fragments.OmniJawsSettings" />
           
 </PreferenceScreen>
