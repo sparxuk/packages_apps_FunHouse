@@ -41,5 +41,10 @@
         android:key="omnijaws_settings"
         android:title="@string/weather_title"
         android:fragment="com.gzr.wolvesden.fragments.OmniJawsSettings" />
+
+    <Preference
+        android:key="lockscreen_settings"
+        android:title="@string/lockscreen_category_title"
+        android:fragment="com.gzr.wolvesden.fragments.LockscreenItemSettings" />
           
 </PreferenceScreen>
