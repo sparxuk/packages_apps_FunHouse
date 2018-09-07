@@ -47,7 +47,12 @@
         android:key="pocket_mode"
         android:fragment="com.gzr.funhouse.fragments.PocketMode"
         android:title="@string/pocket_mode_title" />
-    
+
+    <Preference
+        android:key="notificaton"
+        android:fragment="com.gzr.funhouse.fragments.Notification"
+        android:title="@string/notification_title" />
+
     <com.gzr.funhouse.preference.SystemSettingListPreference
         android:key="toast_animation"
         android:title="@string/toast_animation_title"
