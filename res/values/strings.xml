@@ -26,6 +26,12 @@
     <string name="multitasking_category">Multi-Tasking</string>
     <string name="statusbar_notifications_category">Status bar notifications</string>
 
+    <!-- Fingerprint authentication vibration -->
+    <string name="lockscreen_security_category">Security</string>
+    <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
+    <string name="fprint_sucess_vib_summary_on">Vibrate on successful fingerprint authentication enabled</string>
+    <string name="fprint_sucess_vib_summary_off">Vibrate on successful fingerprint authentication disabled</string>
+
     <!-- Fragments -->
     <string name="powermenu_title">Power menu</string>
     <string name="statusbar_logo_title">Statusbar logo</string>

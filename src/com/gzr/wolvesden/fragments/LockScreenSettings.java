@@ -19,6 +19,7 @@ package com.gzr.wolvesden.fragments;
 import android.content.Context;
 import android.content.ContentResolver;
 import android.content.res.Resources;
+import android.hardware.fingerprint.FingerprintManager;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.provider.Settings;
@@ -34,13 +35,33 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.Utils;
 
-public class LockScreenSettings extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener {
+public class LockScreenSettings extends SettingsPreferenceFragment
+    implements Preference.OnPreferenceChangeListener {
+
+    private static final String FP_SUCCESS_VIBRATION = "fingerprint_success_vib";
+
+    private FingerprintManager mFingerprintManager;
+    private SwitchPreference mFingerprintVib;
 
     private ListPreference mLockClockStyle;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        PreferenceScreen prefSet = getPreferenceScreen();
+        ContentResolver resolver = getActivity().getContentResolver();
+
+        try {
+            mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
+        } catch (Exception e) {
+            //ignore
+        }
+        // Fingerprint vibration
+        mFingerprintVib = (SwitchPreference) prefSet.findPreference(FP_SUCCESS_VIBRATION);
+
+        if (mFingerprintManager == null || !mFingerprintManager.isHardwareDetected()){
+            mFingerprintVib.getParent().removePreference(mFingerprintVib);
+        }
 
         addPreferencesFromResource(R.xml.lockscreen_settings);
         mLockClockStyle = (ListPreference) findPreference("lockscreen_clock_selection");
@@ -60,8 +81,7 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
     @Override
     public void onResume() {
         super.onResume();
-
-    }    
+    }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
@@ -73,8 +93,8 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
             mLockClockStyle.setSummary(
                     mLockClockStyle.getEntries()[index]);
         return true;
-
     }  
         return false;
-    }
+   }
+
 }
