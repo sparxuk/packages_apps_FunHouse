@@ -31,4 +31,9 @@
         android:fragment="com.gzr.wolvesden.fragments.StatusBarBatterySettings"
         android:title="@string/statusbar_battery_title" />
 
+    <Preference
+        android:key="qs_rows_columns"
+        android:fragment="com.gzr.wolvesden.fragments.QsRowsColumns"
+        android:title="@string/qs_rows_columns_title"/>
+
 </PreferenceScreen>
