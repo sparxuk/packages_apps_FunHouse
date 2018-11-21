@@ -53,4 +53,10 @@
             android:targetClass="com.android.systemui.tuner.TunerActivity" />
     </Preference>
 
+    <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
+        android:key="notification_sound_vib_screen_on"
+        android:title="@string/notification_sound_vib_screen_on_title"
+        android:summary="@string/notification_sound_vib_screen_on_summary"
+        android:defaultValue="true" />
+
 </PreferenceScreen>
