@@ -46,6 +46,7 @@ import com.gzr.wolvesden.tabs.StatusBar;
 import com.gzr.wolvesden.tabs.Navigation;
 import com.gzr.wolvesden.tabs.MultiTasking;
 import com.gzr.wolvesden.PagerSlidingTabStrip;
+import com.gzr.wolvesden.fragments.SmartPixels;
 import com.android.settings.R;
 import com.android.settings.dashboard.SummaryLoader;
 import com.android.settings.SettingsPreferenceFragment;
@@ -109,7 +110,8 @@ public class WolvesDen extends SettingsPreferenceFragment {
             frags[2] = new Lockscreen();
             frags[3] = new StatusBar();
             frags[4] = new Navigation();
-            //frags[5] = new MultiTasking();
+            frags[5] = new SmartPixels();
+            //frags[6] = new MultiTasking();
         }
 
         @Override
@@ -135,7 +137,8 @@ public class WolvesDen extends SettingsPreferenceFragment {
                     getString(R.string.style_category),
                     getString(R.string.lockscreen_category),
                     getString(R.string.statusbar_category),
-                    getString(R.string.navigation_category)};
+                    getString(R.string.navigation_category),
+                    getString(R.string.smart_pixels_title)};
                     //getString(R.string.multitasking_category)};
         return titleString;
     }
