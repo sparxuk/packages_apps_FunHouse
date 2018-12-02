@@ -37,4 +37,14 @@
         android:summary="@string/toast_icon_summary"
         android:defaultValue="true" />
 
+    <Preference
+        android:key="stock_tuner"
+        android:enabled="true"
+        android:title="@string/systemui_tuner_title"
+        android:summary="@string/systemui_tuner_summary">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.systemui"
+            android:targetClass="com.android.systemui.tuner.TunerActivity" />
+    </Preference>
+
 </PreferenceScreen>
