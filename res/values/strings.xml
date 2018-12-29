@@ -30,6 +30,7 @@
 
     <!-- Fragments -->
     <string name="powermenu_title">Power menu</string>
+    <string name="various_statusbar_title">Various</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
@@ -59,5 +60,10 @@
     <!-- <string name="powermenu_soundpanel">Sound Panel</string> -->
     <!-- <string name="powermenu_users">Users</string> -->
     <string name="powermenu_screenrecord">Screenrecord</string>
+
+    <!-- Validus statusbar logo -->
+    <string name="status_bar_logo_title">Validus logo</string>
+    <string name="status_bar_logo_summary">Enable to show Validus logo on statusbar</string>
+
 
 </resources>
