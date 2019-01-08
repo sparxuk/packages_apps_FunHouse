@@ -27,4 +27,9 @@
         android:summary="@string/lockscreen_enable_power_menu_summary"
         android:defaultValue="true"/>
 
+    <Preference
+        android:key="various_lockscreen"
+        android:title="@string/various_lockscreen_title"
+        android:fragment="com.gzr.wolvesden.fragments.VariousLockscreen" />  
+          
 </PreferenceScreen>

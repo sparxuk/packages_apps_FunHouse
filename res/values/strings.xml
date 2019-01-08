@@ -32,6 +32,7 @@
     <string name="powermenu_title">Power menu</string>
     <string name="various_statusbar_title">Various</string>
     <string name="statusbar_battery_title">Statusbar battery</string>
+    <string name="various_lockscreen_title">Various</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
@@ -85,5 +86,9 @@
     <string name="battery_percent_hidden">Hidden</string>
     <string name="battery_percent_outside">Outside</string>
     <string name="battery_percent_inside">Inside</string>
+
+    <!-- Double-tap lockscreen to lock -->
+    <string name="double_tap_sleep_lockscreen">Double tap to sleep on lockscreen</string>
+    <string name="double_tap_sleep_gesture_title">Double tap status bar to sleep</string>
        
 </resources>
