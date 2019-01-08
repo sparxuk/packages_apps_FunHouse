@@ -31,6 +31,7 @@
     <!-- Fragments -->
     <string name="powermenu_title">Power menu</string>
     <string name="various_statusbar_title">Various</string>
+    <string name="statusbar_battery_title">Statusbar battery</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
@@ -66,5 +67,23 @@
     <string name="status_bar_logo_summary">Enable to show Validus logo on statusbar</string>
     <string name="status_bar_logo_style_title">Validus logo style</string>
     <string name="status_bar_logo_color_title">Select color</string>
+ 
+    <!-- Battery styles -->
+    <string name="battery_style_category_title">Battery level</string>
+    <string name="battery_style_title">Battery icon style</string>
+    <string name="battery_style_summary">Change the look of the battery icon in the statusbar</string>
+    <string name="battery_style_port">Portrait</string>
+    <string name="battery_style_land">Landscape</string>
+    <string name="battery_style_circle">Circle</string>
+    <string name="battery_style_dotted_circle">Dotted circle</string>
+    <string name="battery_style_text">Text</string>
+    <string name="battery_style_hidden">Hidden</string>
 
+    <!-- Battery percent -->
+    <string name="show_battery_percent_title">Show battery percentage</string>
+    <string name="show_battery_percent_summary">Show battery level percentage near the icon</string>
+    <string name="battery_percent_hidden">Hidden</string>
+    <string name="battery_percent_outside">Outside</string>
+    <string name="battery_percent_inside">Inside</string>
+       
 </resources>
