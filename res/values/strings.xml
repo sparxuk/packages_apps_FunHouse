@@ -33,6 +33,7 @@
     <string name="various_statusbar_title">Various</string>
     <string name="statusbar_battery_title">Statusbar battery</string>
     <string name="various_lockscreen_title">Various</string>
+    <string name="various_system_title">Various</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
@@ -90,5 +91,11 @@
     <!-- Double-tap lockscreen to lock -->
     <string name="double_tap_sleep_lockscreen">Double tap to sleep on lockscreen</string>
     <string name="double_tap_sleep_gesture_title">Double tap status bar to sleep</string>
-       
+
+    <!-- Screen Off animation -->
+    <string name="screen_off_animation_title">Screen off animation</string>
+    <string name="screen_off_animation_default">Default</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Scale</string>
+
 </resources>
