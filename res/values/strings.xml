@@ -30,10 +30,8 @@
 
     <!-- Fragments -->
     <string name="powermenu_title">Power menu</string>
-    <string name="various_statusbar_title">Various</string>
+    <string name="statusbar_logo_title">Statusbar logo</string>
     <string name="statusbar_battery_title">Statusbar battery</string>
-    <string name="various_lockscreen_title">Various</string>
-    <string name="various_system_title">Various</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
@@ -54,6 +52,7 @@
     <string name="lockscreen_enable_power_menu_summary">Allow accessing power menu on secure lock screen</string>
 
     <!-- Power Menu -->
+    <string name="powermenu_category_title">Power menu options</string>
     <string name="powermenu_screenshot">Screenshot</string>
     <string name="powermenu_power">Power</string>
     <string name="powermenu_restart">Restart</string>
@@ -65,13 +64,14 @@
     <string name="powermenu_screenrecord">Screenrecord</string>
 
     <!-- Validus statusbar logo -->
+    <string name="logo_style_category_title">Logo options</string>
     <string name="status_bar_logo_title">Validus logo</string>
     <string name="status_bar_logo_summary">Enable to show Validus logo on statusbar</string>
     <string name="status_bar_logo_style_title">Validus logo style</string>
     <string name="status_bar_logo_color_title">Select color</string>
  
     <!-- Battery styles -->
-    <string name="battery_style_category_title">Battery level</string>
+    <string name="battery_style_category_title">Battery options</string>
     <string name="battery_style_title">Battery icon style</string>
     <string name="battery_style_summary">Change the look of the battery icon in the statusbar</string>
     <string name="battery_style_port">Portrait</string>
@@ -89,11 +89,13 @@
     <string name="battery_percent_inside">Inside</string>
 
     <!-- Double-tap lockscreen to lock -->
+    <string name="double_tap_sleep_category_title">Double tap to sleep</string>
     <string name="double_tap_sleep_lockscreen">Double tap to sleep on lockscreen</string>
     <string name="double_tap_sleep_gesture_title">Double tap status bar to sleep</string>
 
     <!-- Screen Off animation -->
-    <string name="screen_off_animation_title">Screen off animation</string>
+    <string name="screen_off_category_title">Screen off animation</string>
+    <string name="screen_off_animation_title">Set screen off animation</string>
     <string name="screen_off_animation_default">Default</string>
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Scale</string>

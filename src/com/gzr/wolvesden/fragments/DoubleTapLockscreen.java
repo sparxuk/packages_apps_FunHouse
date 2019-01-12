@@ -34,28 +34,21 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.Utils;
 
-public class VariousSystem extends SettingsPreferenceFragment implements
+public class DoubleTapLockscreen extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
-private static final String SCREEN_OFF_ANIMATION = "screen_off_animation";   
+    /*private static final String KEY_LOCKSCREEN_CLOCK_SELECTION = "lockscreen_clock_selection";
+    private static final String KEY_LOCKSCREEN_DATE_SELECTION = "lockscreen_date_selection";
 
-private ListPreference mScreenOffAnimation;         
+    private ListPreference mLockscreenClockSelection;
+    private ListPreference mLockscreenDateSelection;*/
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.various_system);
-
-        ContentResolver resolver = getActivity().getContentResolver();
-
-        mScreenOffAnimation = (ListPreference) findPreference(SCREEN_OFF_ANIMATION);
-        int screenOffStyle = Settings.System.getInt(resolver,
-                Settings.System.SCREEN_OFF_ANIMATION, 0);
-        mScreenOffAnimation.setValue(String.valueOf(screenOffStyle));
-        mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntry());
-        mScreenOffAnimation.setOnPreferenceChangeListener(this);
-    }
+        addPreferencesFromResource(R.xml.double_tap_lockscreen);
+    } 
 
     @Override
     public int getMetricsCategory() {
@@ -65,20 +58,11 @@ private ListPreference mScreenOffAnimation;
     @Override
     public void onResume() {
         super.onResume();
-    }
 
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
-            ContentResolver resolver = getActivity().getContentResolver();
+    }    
 
-        if (preference == mScreenOffAnimation) {
-            String value = (String) newValue;
-            Settings.System.putInt(resolver,
-                    Settings.System.SCREEN_OFF_ANIMATION, Integer.valueOf(value));
-            int valueIndex = mScreenOffAnimation.findIndexOfValue(value);
-            mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntries()[valueIndex]);
-            return true;
-        }
-        return false;
-    }
+    public boolean onPreferenceChange(Preference preference, Object objValue) {
+        return true;
 
+    }  
 }

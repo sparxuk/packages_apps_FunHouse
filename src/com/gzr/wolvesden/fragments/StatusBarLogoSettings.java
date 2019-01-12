@@ -35,7 +35,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.Utils;
 
-public class VariousStatusbar extends SettingsPreferenceFragment implements
+public class StatusBarLogoSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     private ListPreference mLogoStyle;
@@ -46,7 +46,7 @@ public class VariousStatusbar extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.various_statusbar);
+        addPreferencesFromResource(R.xml.statusbar_logo_settings);
 
         mLogoStyle = (ListPreference) findPreference("status_bar_logo_style");
         mLogoStyle.setOnPreferenceChangeListener(this);

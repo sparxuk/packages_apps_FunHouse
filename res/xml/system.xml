@@ -20,16 +20,16 @@
     android:title="@string/system_category"
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
-
-    <Preference
-        android:key="various_system"
-        android:fragment="com.gzr.wolvesden.fragments.VariousSystem"
-        android:title="@string/various_system_title" />
         
     <Preference
         android:key="powermenu"
         android:fragment="com.gzr.wolvesden.fragments.PowerMenu"
         android:title="@string/powermenu_title" />
+
+    <Preference
+        android:key="screenoff"
+        android:fragment="com.gzr.wolvesden.fragments.ScreenOffAnimations"
+        android:title="@string/screen_off_category_title" />
 
     <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
         android:key="toast_icon"

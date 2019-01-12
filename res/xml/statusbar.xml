@@ -22,8 +22,13 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <Preference
-        android:key="various_statusbar"
-        android:title="@string/various_statusbar_title"
-        android:fragment="com.gzr.wolvesden.fragments.VariousStatusbar" />
+        android:key="statusbar_logo"
+        android:fragment="com.gzr.wolvesden.fragments.StatusBarLogoSettings"
+        android:title="@string/statusbar_logo_title" />
+
+    <Preference
+        android:key="statusbar_battery"
+        android:fragment="com.gzr.wolvesden.fragments.StatusBarBatterySettings"
+        android:title="@string/statusbar_battery_title" />
 
 </PreferenceScreen>
