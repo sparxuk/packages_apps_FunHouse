@@ -17,24 +17,21 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/lockscreen_category"
-    android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <com.gzr.wolvesden.preference.GlobalSettingSwitchPreference
-        android:key="lockscreen_enable_power_menu"
-        android:title="@string/lockscreen_enable_power_menu_title"
-        android:summary="@string/lockscreen_enable_power_menu_summary"
-        android:defaultValue="true"/>
+    <PreferenceCategory
+        android:key="hide_lock"
+        android:title="@string/lockscreen_item_category"/>
 
-    <Preference
-        android:key="doubletap_lockscreen"
-        android:title="@string/double_tap_sleep_category_title"
-        android:fragment="com.gzr.wolvesden.fragments.DoubleTapLockscreen" />
+    <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
+        android:key="lockscreen_clock"
+        android:title="@string/lockscreen_clock_title"
+        android:summary="@string/lockscreen_clock_summary"
+        android:defaultValue="true" />
 
-    <Preference
-        android:key="hide_lock_clock"
-        android:title="@string/lockscreen_settings_category_title"
-        android:fragment="com.gzr.wolvesden.fragments.LockScreenSettings" />  
-          
+    <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
+        android:key="lockscreen_info"
+        android:title="@string/lockscreen_info_title"
+        android:summary="@string/lockscreen_info_summary"
+        android:defaultValue="true" />
 </PreferenceScreen>

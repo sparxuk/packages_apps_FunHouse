@@ -100,4 +100,12 @@
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Scale</string>
 
+    <!-- Lockscreen items -->
+    <string name="lockscreen_settings_category_title">Lockscreen items</string>
+    <string name="lockscreen_item_category">Lockscreen items</string>
+    <string name="lockscreen_clock_title">Clock widget</string>
+    <string name="lockscreen_clock_summary">Show the clock widget on the lockscreen</string>
+    <string name="lockscreen_info_title">Items underneath the clock</string>
+    <string name="lockscreen_info_summary">Show the date, weather, alarms and zen on the lockscreen</string>
+
 </resources>
