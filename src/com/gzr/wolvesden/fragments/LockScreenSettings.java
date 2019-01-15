@@ -37,11 +37,19 @@ import com.android.settings.Utils;
 public class LockScreenSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
+    private ListPreference mLockClockStyle;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.lockscreen_settings);
+        mLockClockStyle = (ListPreference) findPreference("lockscreen_clock_selection");
+        mLockClockStyle.setOnPreferenceChangeListener(this);
+        int lockClockStyle = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.LOCKSCREEN_CLOCK_SELECTION,
+                0, UserHandle.USER_CURRENT);
+        mLockClockStyle.setValue(String.valueOf(lockClockStyle));
+        mLockClockStyle.setSummary(mLockClockStyle.getEntry());
     } 
 
     @Override
@@ -55,8 +63,18 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
 
     }    
 
-    public boolean onPreferenceChange(Preference preference, Object objValue) {
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
+        if (preference.equals(mLockClockStyle)) {
+            int lockClockStyle = Integer.parseInt(((String) newValue).toString());
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.LOCKSCREEN_CLOCK_SELECTION, lockClockStyle, UserHandle.USER_CURRENT);
+            int index = mLockClockStyle.findIndexOfValue((String) newValue);
+            mLockClockStyle.setSummary(
+                    mLockClockStyle.getEntries()[index]);
         return true;
 
     }  
+        return false;
+    }
 }
