@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
 */
-package com.gzr.wolvesden;
+package com.gzr.wolvesden.fragments;
 import android.os.Bundle;
 import android.content.Context;
 import android.content.Intent;
@@ -40,7 +40,7 @@ public class LockscreenItemSettings extends SettingsPreferenceFragment implement
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.VALIDUS_SETTINGS;
+        return MetricsEvent.VALIDUS;
     }
 
     @Override

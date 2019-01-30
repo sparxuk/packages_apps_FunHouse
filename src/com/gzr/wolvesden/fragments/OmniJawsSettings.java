@@ -16,15 +16,17 @@
  *
 */
 
-package com.gzr.wolvesden;
+package com.gzr.wolvesden.fragments;
 
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.pm.ResolveInfo;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceCategory;
@@ -34,7 +36,7 @@ import android.provider.Settings;
 import android.util.Log;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
-import com.android.internal.util.gzosp.GzospUtils.java;
+import com.android.internal.util.gzosp.GzospUtils;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -60,7 +62,7 @@ public class OmniJawsSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.VALIDUS_SETTINGS;
+        return MetricsEvent.VALIDUS;
     }
 
     @Override
@@ -70,7 +72,7 @@ public class OmniJawsSettings extends SettingsPreferenceFragment implements
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
         mWeatherCategory = (PreferenceCategory) prefScreen.findPreference(CATEGORY_WEATHER);
-        if (mWeatherCategory != null && !isOmniJawsServiceInstalled()) {
+        if (mWeatherCategory != null ) {
             prefScreen.removePreference(mWeatherCategory);
         } else {
             String settingHeaderPackage = Settings.System.getString(getContentResolver(),
@@ -109,10 +111,6 @@ public class OmniJawsSettings extends SettingsPreferenceFragment implements
             mWeatherIconPack.setSummary(mWeatherIconPack.getEntries()[valueIndex]);
         }
         return true;
-    }
-
-    private boolean isOmniJawsServiceInstalled() {
-        return PackageUtils.isAvailableApp(WEATHER_SERVICE_PACKAGE, getActivity());
     }
 
     private void getAvailableWeatherIconPacks(List<String> entries, List<String> values) {
