@@ -36,6 +36,11 @@
         android:fragment="com.gzr.wolvesden.fragments.StatusBarBatterySettings"
         android:title="@string/statusbar_battery_title" />
 
+   <Preference
+        android:key="custom_carrier"
+        android:fragment="com.gzr.wolvesden.fragments.CarrierLabel"
+        android:title="@string/carrier_label_title" />
+
     <Preference
         android:key="qs_rows_columns"
         android:fragment="com.gzr.wolvesden.fragments.QsRowsColumns"
