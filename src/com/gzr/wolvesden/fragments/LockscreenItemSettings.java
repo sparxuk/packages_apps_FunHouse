@@ -46,7 +46,7 @@ public class LockscreenItemSettings extends SettingsPreferenceFragment implement
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.lockscreenitems);
+        addPreferencesFromResource(R.xml.omnijaws_settings);
     }
 
     @Override
@@ -68,7 +68,7 @@ public class LockscreenItemSettings extends SettingsPreferenceFragment implement
                             new ArrayList<SearchIndexableResource>();
 
                     SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.lockscreenitems;
+                    sir.xmlResId = R.xml.omnijaws_settings;
                     result.add(sir);
 
                     return result;

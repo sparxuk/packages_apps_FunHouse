@@ -19,6 +19,16 @@
     android:key="omnijaws_settings"
     android:title="@string/weather_title">
 
+    <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
+        android:key="lockscreen_weather_enabled"
+        android:title="@string/lockscreen_weather_title"
+        android:summary="@string/lockscreen_weather_summary"
+        android:defaultValue="false" />
+
+    <Preference
+        android:persistent="false"
+        android:summary="@string/lockscreen_items_aod_info_title" />
+
         <PreferenceScreen
             android:title="@string/weather_config_title"
             android:summary="@string/weather_config_summary" >
