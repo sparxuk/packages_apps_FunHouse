@@ -22,6 +22,11 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <Preference
+        android:key="statusbar_clock_date"
+        android:fragment="com.gzr.wolvesden.fragments.ClockOptions"
+        android:title="@string/statusbar_clock_title" />
+
+    <Preference
         android:key="statusbar_logo"
         android:fragment="com.gzr.wolvesden.fragments.StatusBarLogoSettings"
         android:title="@string/statusbar_logo_title" />
