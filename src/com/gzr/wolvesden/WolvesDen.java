@@ -40,6 +40,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.gzr.wolvesden.tabs.System;
+import com.gzr.wolvesden.tabs.Style;
 import com.gzr.wolvesden.tabs.Lockscreen;
 import com.gzr.wolvesden.tabs.StatusBar;
 import com.gzr.wolvesden.tabs.Navigation;
@@ -104,10 +105,11 @@ public class WolvesDen extends SettingsPreferenceFragment {
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new System();
-            frags[1] = new Lockscreen();
-            frags[2] = new StatusBar();
-            frags[3] = new Navigation();
-            frags[4] = new MultiTasking();
+            frags[1] = new Style();
+            frags[2] = new Lockscreen();
+            frags[3] = new StatusBar();
+            //frags[3] = new Navigation();
+            //frags[4] = new MultiTasking();
         }
 
         @Override
@@ -130,10 +132,11 @@ public class WolvesDen extends SettingsPreferenceFragment {
         String titleString[];
         titleString = new String[]{
                     getString(R.string.system_category),
+                    getString(R.string.style_category),
                     getString(R.string.lockscreen_category),
-                    getString(R.string.statusbar_category),
-                    getString(R.string.navigation_category),
-                    getString(R.string.multitasking_category)};
+                    getString(R.string.statusbar_category)};
+                    //getString(R.string.navigation_category),
+                    //getString(R.string.multitasking_category)};
         return titleString;
     }
 

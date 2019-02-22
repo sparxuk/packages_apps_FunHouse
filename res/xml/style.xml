@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2016 Ground Zero Roms
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/style_category"
+    android:layout="@layout/tab"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+        
+    <Preference
+        android:key="style"
+        android:fragment="com.gzr.wolvesden.fragments.StyleSettings"
+        android:title="@string/style_settings_title" />
+        		
+	<com.android.settings.display.FontDialogPreference
+        android:key="custom_font"
+        android:title="@string/font_picker_title"
+        android:persistent="false" />
+
+</PreferenceScreen>

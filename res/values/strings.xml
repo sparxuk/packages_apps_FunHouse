@@ -21,6 +21,7 @@
 
     <!-- Tabs -->
     <string name="system_category">System</string>
+    <string name="style_category">Style</string>
     <string name="lockscreen_category">Lock screen</string>
     <string name="heads_up_category">Heads up</string>
     <string name="statusbar_category">Status bar</string>
@@ -172,5 +173,9 @@
     <string name="clock_date_right">Right of time</string>
     <string name="clock_date_left">Left of time</string>
     <string name="clock_date_position">Date position</string>
-
+    
+    <!-- Styles -->
+    <string name="style_settings_title">Device Style Options</string>
+    <string name="device_theme">Device theme</string>
+    <string name="font_picker_title">Fonts</string>
 </resources>
