@@ -158,10 +158,11 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
         ColorStateList colorStateList = a.getColorStateList(TEXT_COLOR_INDEX);
         int textPrimaryColor = context.getResources().getColor(R.color.material_deep_teal_500);
         int tabTextColor = context.getResources().getColor(R.color.material_deep_teal_500);
+        int indicatorPrimaryColor = context.getResources().getColor(R.color.accent_device_default_light);
 
         underlineColor = textPrimaryColor;
         dividerColor = textPrimaryColor;
-        indicatorColor = textPrimaryColor;
+        indicatorColor = indicatorPrimaryColor;
         int paddingLeft = a.getDimensionPixelSize(PADDING_LEFT_INDEX, padding);
         int paddingRight = a.getDimensionPixelSize(PADDING_RIGHT_INDEX, padding);
         a.recycle();
