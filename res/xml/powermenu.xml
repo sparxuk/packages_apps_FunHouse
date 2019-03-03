@@ -53,7 +53,7 @@
         android:title="@string/powermenu_screenrecord"
         android:defaultValue="false" />
 
-   <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
+   <com.gzr.wolvesden.preference.SecureSettingSwitchPreference
         android:key="emergency_in_power_menu"
         android:title="@string/global_actions_emergency_title"
         android:summary="@string/global_actions_emergency_summary"
