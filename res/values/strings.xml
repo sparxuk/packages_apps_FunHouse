@@ -63,6 +63,7 @@
     <!-- Emergency -->
     <string name="global_actions_emergency_title">Emergency</string>
     <string name="global_actions_emergency_summary">Add Emergency dialing to Power Menu</string>
+    <string name="powermenu_silent">Silent mode</string>
 
     <!-- Validus statusbar logo -->
     <string name="logo_style_category_title">Logo options</string>
