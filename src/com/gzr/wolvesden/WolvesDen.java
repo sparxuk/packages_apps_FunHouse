@@ -108,8 +108,8 @@ public class WolvesDen extends SettingsPreferenceFragment {
             frags[1] = new Style();
             frags[2] = new Lockscreen();
             frags[3] = new StatusBar();
-            //frags[3] = new Navigation();
-            //frags[4] = new MultiTasking();
+            frags[4] = new Navigation();
+            //frags[5] = new MultiTasking();
         }
 
         @Override
@@ -134,8 +134,8 @@ public class WolvesDen extends SettingsPreferenceFragment {
                     getString(R.string.system_category),
                     getString(R.string.style_category),
                     getString(R.string.lockscreen_category),
-                    getString(R.string.statusbar_category)};
-                    //getString(R.string.navigation_category),
+                    getString(R.string.statusbar_category),
+                    getString(R.string.navigation_category)};
                     //getString(R.string.multitasking_category)};
         return titleString;
     }
