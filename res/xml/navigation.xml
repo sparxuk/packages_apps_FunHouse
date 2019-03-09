@@ -26,4 +26,11 @@
         android:title="@string/gesture_settings_title"
         android:fragment="com.android.settings.gzosp.GestureSettings" />
 
+    <!-- Button Settings -->
+    <Preference
+        android:key="button_settings"
+        android:title="@string/button_settings_title"
+        android:fragment="com.android.settings.gzosp.dashboard.ButtonSettings"
+        settings:controller="com.android.settings.gzosp.dashboard.ButtonSettingsPreferenceController"/>    
+
 </PreferenceScreen>
