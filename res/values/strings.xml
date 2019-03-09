@@ -184,4 +184,8 @@
     <string name="systemui_tuner_title">SystemUI Tuner</string>
     <string name="systemui_tuner_summary">Experimental SystemUI Tweaks</string>
 
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">Swipe to screenshot</string>
+    <string name="three_finger_gesture_summary">Swipe three fingers to take screenshot</string>
+
 </resources>
