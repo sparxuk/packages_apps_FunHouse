@@ -32,11 +32,6 @@
         android:title="@string/double_tap_sleep_category_title"
         android:fragment="com.gzr.wolvesden.fragments.DoubleTapLockscreen" />
 
-    <Preference
-        android:key="hide_lock_clock"
-        android:title="@string/lockscreen_settings_category_title"
-        android:fragment="com.gzr.wolvesden.fragments.LockScreenSettings" />  
-
     <com.gzr.wolvesden.preference.SecureSettingListPreference
         android:key="omnijaws_settings"
         android:title="@string/weather_title"
