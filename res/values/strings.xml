@@ -81,7 +81,7 @@
     <string name="status_bar_logo_summary">Enable to show Validus logo on statusbar</string>
     <string name="status_bar_logo_style_title">Validus logo style</string>
     <string name="status_bar_logo_color_title">Select color</string>
- 
+
     <!-- Battery styles -->
     <string name="battery_style_category_title">Battery options</string>
     <string name="battery_style_title">Battery icon style</string>
@@ -188,7 +188,7 @@
     <string name="clock_date_right">Right of time</string>
     <string name="clock_date_left">Left of time</string>
     <string name="clock_date_position">Date position</string>
-    
+
     <!-- Styles -->
     <string name="style_settings_title">Device Style Options</string>
     <string name="device_theme">Device theme</string>
@@ -240,7 +240,7 @@
     <!-- OP Gestures -->
     <string name="gesture_settings_title">Custom Gestures</string>
     <string name="gesture_settings_info">Navigation bar must be disabled!\n\nAvailable gestures:\n\nBack\n- Swipe up on left or right side\n\nHome\n- Swipe up center\n\nRecent apps\n- Swipe up center and hold\n\nLong press home\n- Short swipe up and hold in the center</string>
-    <string name="gesture_settings_info_new">Navigation bar must be disabled!\n\nAvailable gestures:\n\nBack\n- Swipe up on left or right side\n\nHome\n- Swipe up center\n\nRecent apps\n- Swipe up center and hold\n\nSwitch to last app\n- Short swipe up and hold in the center</string>
+    <string name="gesture_settings_info_new">Navigation bar will be disabled/enabled!\n\nAvailable gestures:\n\nBack\n- Swipe up on left or right side\n\nHome\n- Swipe up center\n\nRecent apps\n- Swipe up center and hold\n\nSwitch to last app\n- Short swipe up and hold in the center</string>
     <string name="use_bottom_gesture_title">Navigation gestures</string>
     <string name="use_bottom_gesture_summary">Use bottom swipe up gestures for navigation</string>
 
