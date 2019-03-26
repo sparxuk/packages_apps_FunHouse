@@ -252,4 +252,7 @@
     <string name="unit_px">px</string>
     <string name="unit_msec">mSec</string>
 
+    <!-- Stock Gestures -->
+    <string name="gesture_preference_title">Gestures</string>
+
 </resources>
