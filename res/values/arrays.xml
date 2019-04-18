@@ -119,6 +119,7 @@
         <item>@string/lockscreen_clock_selection_sammy_accent_bold_hour</item>
         <item>@string/lockscreen_clock_selection_sammy_accent_bold_min</item>
         <item>@string/lockscreen_clock_selection_sammy_accent_alt</item>
+        <item>@string/lockscreen_clock_selection_text</item>
     </string-array>
 
     <string-array name="lockscreen_clock_selection_values" translatable="false">
@@ -134,6 +135,7 @@
         <item>10</item>
         <item>11</item>
         <item>6</item>
+        <item>12</item>
     </string-array>
 
     <!-- Status bar clock and date options -->
