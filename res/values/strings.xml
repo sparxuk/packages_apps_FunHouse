@@ -263,4 +263,9 @@
     <string name="volte_icon_title">VoLTE icon</string>
     <string name="volte_icon_summary">Display VoLTE icon</string>
 
+    <!-- App Ops-->
+    <string name="app_ops_settings_summary">Control apps permissions</string>
+    <!-- [CHAR LIMIT=NONE] App ops settings title, on main settings screen. If clicked, the user is taken to a settings screen for app operations -->
+    <string name="app_ops_settings">App Ops</string>
+
 </resources>
