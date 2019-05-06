@@ -296,4 +296,9 @@
     <string name="button_volume_wake_title">Button wake</string>
     <string name="volume_button_music_control_title">Music control</string>
     <string name="volume_button_music_control_summary">Long press volume buttons to switch tracks while screen off</string>
+
+    <!-- Lockscreen Media art -->
+    <string name="media_art_title">Full-screen media cover art</string>
+    <string name="media_art_summary">Set full-screen media cover art on the lockscreen</string>
+
 </resources>
