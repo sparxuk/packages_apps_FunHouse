@@ -290,4 +290,10 @@
     <string name="show_carrier_keyguard">Lockscreen</string>
     <string name="show_carrier_statusbar">Status bar</string>
     <string name="show_carrier_enabled">Both</string>
+    
+    <!-- Volume button music -->
+    <string name="button_volume_keys_title">Volume</string>
+    <string name="button_volume_wake_title">Button wake</string>
+    <string name="volume_button_music_control_title">Music control</string>
+    <string name="volume_button_music_control_summary">Long press volume buttons to switch tracks while screen off</string>
 </resources>
