@@ -47,12 +47,6 @@
         android:title="@string/qs_rows_columns_title"/>
 
     <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
-       android:key="statusbar_hide_notch"
-       android:title="@string/hide_notch_title"
-       android:summary="@string/hide_notch_summary"
-       android:defaultValue="false" />
-
-    <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
         android:key="double_tap_sleep_gesture"
         android:title="@string/double_tap_sleep_gesture_title"
         android:defaultValue="true" />

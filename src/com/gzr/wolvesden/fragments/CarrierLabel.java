@@ -55,7 +55,6 @@ public class CarrierLabel extends SettingsPreferenceFragment
 
     private static final String KEY_CUSTOM_CARRIER_LABEL = "custom_carrier_label";
     private static final String KEY_STATUS_BAR_SHOW_CARRIER = "status_bar_show_carrier";
-    private static final String KEY_HIDE_NOTCH = "statusbar_hide_notch";
 
     private ListPreference mShowCarrierLabel;
     private Preference mCustomCarrierLabel;
@@ -94,13 +93,6 @@ public class CarrierLabel extends SettingsPreferenceFragment
         updateCustomLabelTextSummary();
         mCustomCarrierLabel.setEnabled(!mShowCarrierLabel.getEntryValues()
                 [showCarrierLabel].equals("0"));
-
-        final String displayCutout = getResources().getString(
-                com.android.internal.R.string.config_mainBuiltInDisplayCutout);
-        if(displayCutout.isEmpty()) {
-            final Preference hideNotchPref = (Preference) findPreference(KEY_HIDE_NOTCH);
-            hideNotchPref.getParent().removePreference(hideNotchPref);
-        }
     }
 
     private void updateCustomLabelTextSummary() {

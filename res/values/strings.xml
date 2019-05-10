@@ -94,9 +94,6 @@
     <string name="battery_style_dotted_circle">Dotted circle</string>
     <string name="battery_style_text">Text</string>
     <string name="battery_style_hidden">Hidden</string>
-    <!-- Hide notch -->
-    <string name="hide_notch_title">Hide notch</string>
-    <string name="hide_notch_summary">If enabled it hides notch and fills in side gaps</string>
 
     <!-- Battery percent -->
     <string name="show_battery_percent_title">Show battery percentage</string>
