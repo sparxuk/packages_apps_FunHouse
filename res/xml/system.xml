@@ -45,6 +45,11 @@
         android:fragment="com.gzr.wolvesden.fragments.LedSettings"
         android:title="@string/leds_title" />
 
+    <Preference
+        android:key="audio_panel"
+        android:fragment="com.gzr.wolvesden.fragments.AudioPanelSettings"
+        android:title="@string/audio_panel_view" />
+
     <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
         android:key="toast_icon"
         android:title="@string/toast_icon_title"
