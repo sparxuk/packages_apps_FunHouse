@@ -36,6 +36,11 @@
         android:fragment="com.gzr.wolvesden.fragments.StatusBarBatterySettings"
         android:title="@string/statusbar_battery_title" />
 
+    <Preference
+        android:key="smart_pulldown"
+        android:fragment="com.gzr.wolvesden.fragments.SmartPulldown"
+        android:title="@string/smart_pulldown_title" />
+
    <Preference
         android:key="custom_carrier"
         android:fragment="com.gzr.wolvesden.fragments.CarrierLabel"

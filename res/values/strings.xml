@@ -324,4 +324,14 @@
     <string name="audio_panel_view_alarm_title">Alarm</string>
     <string name="audio_panel_view_voice_title">Voice</string>
     <string name="audio_panel_view_bt_sco_title">Bluetooth</string>
+
+    <!-- Smart pulldown-->
+    <string name="smart_pulldown_title">Smart pulldown</string>
+    <string name="smart_pulldown_off">off</string>
+    <string name="smart_pulldown_none">no notifications</string>
+    <string name="smart_pulldown_dismissable">no dismissable notifications</string>
+    <string name="smart_pulldown_ongoing">no ongoing notifications</string>
+    <string name="smart_pulldown_summary">Open quick settings when there are %1$s</string>
+    <string name="smart_pulldown_none_summary">Open quick settings when there are no notifications</string>
+    <string name="smart_pulldown_off_summary">is turned off</string>
 </resources>
