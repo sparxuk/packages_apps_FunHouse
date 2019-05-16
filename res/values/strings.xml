@@ -367,4 +367,8 @@
     <!-- One Hand mode-->
     <string name="one_hand_mode_enabled_title">One-handed mode</string>		
     <string name="one_hand_mode_enabled_summary">Activate one-handed mode. Swipe left or right on stock navbar for toggling.</string>
+
+    <!-- Battery estimates -->
+    <string name="battery_estimates_title">Battery Estimates in QS</string>
+    <string name="battery_estimates_summary">Show the estimated battery life in QS panel</string>
 </resources>

@@ -33,5 +33,11 @@
         android:entries="@array/battery_percent_entries"
         android:entryValues="@array/battery_percent_values" />
     </PreferenceCategory>
+    
+    <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
+	android:key="show_battery_estimate_qqs"
+	android:title="@string/battery_estimates_title"
+	android:summary="@string/battery_estimates_summary"
+	android:defaultValue="false" />
 
 </PreferenceScreen>

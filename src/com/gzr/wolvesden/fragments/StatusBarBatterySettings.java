@@ -26,6 +26,7 @@ import android.provider.Settings;
 
 import com.gzr.wolvesden.preference.CustomSeekBarPreference;
 import com.gzr.wolvesden.preference.SystemSettingSwitchPreference;
+import com.gzr.wolvesden.preference.SystemSettingIntListPreference;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -38,6 +39,12 @@ public class StatusBarBatterySettings extends SettingsPreferenceFragment impleme
 
     private ListPreference mBatteryIconStyle;
     private ListPreference mBatteryPercentStyle;
+
+    private static final String KEY_ESTIMATE_IN_QQS = "show_battery_estimate_qqs";
+    private static final String KEY_BATTERY_PERCENTAGE = "status_bar_show_battery_percent";
+
+    private SystemSettingIntListPreference mShowBatteryPercentage;
+    private SystemSettingSwitchPreference mShowBatteryInQQS;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -53,6 +60,16 @@ public class StatusBarBatterySettings extends SettingsPreferenceFragment impleme
         mBatteryPercentStyle.setValue(Integer.toString(Settings.Secure.getInt(resolver,
                 Settings.System.SHOW_BATTERY_PERCENT, 0)));
         mBatteryPercentStyle.setOnPreferenceChangeListener(this);
+
+   	// Battery Percentage
+        mShowBatteryPercentage = (SystemSettingIntListPreference) findPreference(KEY_BATTERY_PERCENTAGE);
+        int showBatteryPercentage = Settings.System.getIntForUser(resolver,
+                Settings.System.SHOW_BATTERY_PERCENT, 0, UserHandle.USER_CURRENT);
+        mShowBatteryPercentage.setOnPreferenceChangeListener(this);
+
+        // Battery estimate in Quick QS
+        mShowBatteryInQQS = (SystemSettingSwitchPreference) findPreference(KEY_ESTIMATE_IN_QQS);
+        updateShowBatteryInQQS(showBatteryPercentage);
     }
 
     @Override
@@ -72,7 +89,26 @@ public class StatusBarBatterySettings extends SettingsPreferenceFragment impleme
             Settings.System.putInt(getContentResolver(),
                     Settings.System.SHOW_BATTERY_PERCENT, value);
             return true;
+	 } 
+	else if (preference == mShowBatteryPercentage) {
+            int showBatteryPercentage = Integer.valueOf((String) newValue);
+            updateShowBatteryInQQS(showBatteryPercentage);
+            return true;
         }
         return false;
+    }
+
+    private void updateShowBatteryInQQS(int value) {
+        switch (value) {
+            case 1: {
+                mShowBatteryInQQS.setEnabled(true);
+                break;
+            }
+            case 0:
+            case 2: {
+                mShowBatteryInQQS.setEnabled(false);
+                break;
+            }
+        }
     }
 }
