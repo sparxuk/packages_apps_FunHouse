@@ -117,6 +117,8 @@
         <item>@string/lockscreen_clock_selection_sammy</item>
         <item>@string/lockscreen_clock_selection_sammy_bold</item>
         <item>@string/lockscreen_clock_selection_sammy_accent</item>
+        <item>@string/lockscreen_clock_selection_sammy_accent_bold_hour</item>
+        <item>@string/lockscreen_clock_selection_sammy_accent_bold_min</item>
         <item>@string/lockscreen_clock_selection_sammy_accent_alt</item>
     </string-array>
 
@@ -131,6 +133,8 @@
         <item>4</item>
         <item>5</item>
         <item>6</item>
+        <item>13</item>
+        <item>14</item>
         <item>7</item>
     </string-array>
 
