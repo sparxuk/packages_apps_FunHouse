@@ -26,7 +26,7 @@ import android.provider.Settings;
 
 import com.gzr.wolvesden.preference.CustomSeekBarPreference;
 import com.gzr.wolvesden.preference.SystemSettingSwitchPreference;
-import com.gzr.wolvesden.preference.SystemSettingIntListPreference;
+import com.gzr.wolvesden.preference.SystemSettingListPreference;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -43,7 +43,7 @@ public class StatusBarBatterySettings extends SettingsPreferenceFragment impleme
     private static final String KEY_ESTIMATE_IN_QQS = "show_battery_estimate_qqs";
     private static final String KEY_BATTERY_PERCENTAGE = "status_bar_show_battery_percent";
 
-    private SystemSettingIntListPreference mShowBatteryPercentage;
+    private SystemSettingListPreference mShowBatteryPercentage;
     private SystemSettingSwitchPreference mShowBatteryInQQS;
 
     @Override
@@ -62,7 +62,7 @@ public class StatusBarBatterySettings extends SettingsPreferenceFragment impleme
         mBatteryPercentStyle.setOnPreferenceChangeListener(this);
 
    	// Battery Percentage
-        mShowBatteryPercentage = (SystemSettingIntListPreference) findPreference(KEY_BATTERY_PERCENTAGE);
+        mShowBatteryPercentage = (SystemSettingListPreference) findPreference(KEY_BATTERY_PERCENTAGE);
         int showBatteryPercentage = Settings.System.getIntForUser(resolver,
                 Settings.System.SHOW_BATTERY_PERCENT, 0, UserHandle.USER_CURRENT);
         mShowBatteryPercentage.setOnPreferenceChangeListener(this);
