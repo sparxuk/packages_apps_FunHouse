@@ -54,7 +54,7 @@ public class SmartPixels extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.smart_pixels);
+        addPreferencesFromResource(R.xml.system);
 
         resolver = getActivity().getContentResolver();
 
