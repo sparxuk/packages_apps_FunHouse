@@ -371,4 +371,9 @@
     <!-- Battery estimates -->
     <string name="battery_estimates_title">Battery Estimates in QS</string>
     <string name="battery_estimates_summary">Show the estimated battery life in QS panel</string>
+
+    <!-- Launch music player when headset is connected -->
+    <string name="headset_connect_player_title">Launch music app</string>
+    <string name="headset_connect_player_summary">Launch the default music app when headset is connected</string>
+
 </resources>

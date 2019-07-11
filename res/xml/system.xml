@@ -94,7 +94,13 @@
         android:key="one_hand_mode_enabled"     
         android:title="@string/one_hand_mode_enabled_title"             
         android:summary="@string/one_hand_mode_enabled_summary"                   
-        android:defaultValue="false" />    
+        android:defaultValue="false" />
+
+    <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
+        android:key="headset_connect_player"
+        android:title="@string/headset_connect_player_title"
+        android:summary="@string/headset_connect_player_summary"
+        android:defaultValue="false" />  
 
     <!-- Smart Pixels -->
     <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
