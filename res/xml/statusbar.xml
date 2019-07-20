@@ -68,4 +68,11 @@
          android:summary="@string/volte_icon_summary"
          android:defaultValue="false"/>
 
+    <!-- Data icon - show 4G instead of LTE -->	
+    <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
+            android:key="show_lte_fourgee"
+            android:title="@string/show_4g_title"
+            android:summary="@string/show_4g_summary"
+            android:defaultValue="false" />
+
 </PreferenceScreen>
