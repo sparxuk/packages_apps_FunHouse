@@ -38,6 +38,8 @@ public class LockScreenClock extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     private ListPreference mLockClockStyle;
+    private ListPreference mLockDateStyle;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,6 +52,13 @@ public class LockScreenClock extends SettingsPreferenceFragment implements
                 0, UserHandle.USER_CURRENT);
         mLockClockStyle.setValue(String.valueOf(lockClockStyle));
         mLockClockStyle.setSummary(mLockClockStyle.getEntry());
+        mLockDateStyle = (ListPreference) findPreference("lockscreen_date_selection");
+        mLockDateStyle.setOnPreferenceChangeListener(this);
+        int lockDateStyle = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.LOCKSCREEN_DATE_SELECTION,
+                0, UserHandle.USER_CURRENT);
+        mLockDateStyle.setValue(String.valueOf(lockDateStyle));
+        mLockDateStyle.setSummary(mLockDateStyle.getEntry());
     } 
 
     @Override
@@ -73,7 +82,16 @@ public class LockScreenClock extends SettingsPreferenceFragment implements
                     mLockClockStyle.getEntries()[index]);
         return true;
 
-    }  
+    } else if (preference.equals(mLockDateStyle)) {
+            int lockDateStyle = Integer.parseInt(((String) newValue).toString());
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.LOCKSCREEN_DATE_SELECTION, lockDateStyle, UserHandle.USER_CURRENT);
+            int index = mLockDateStyle.findIndexOfValue((String) newValue);
+            mLockDateStyle.setSummary(
+                    mLockDateStyle.getEntries()[index]);
+        return true;
+
+    }    
         return false;
    }
 }
