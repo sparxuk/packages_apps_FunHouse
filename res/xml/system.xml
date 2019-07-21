@@ -96,11 +96,14 @@
         android:summary="@string/one_hand_mode_enabled_summary"                   
         android:defaultValue="false" />
 
-    <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
+    <com.gzr.wolvesden.preference.SystemSettingListPreference
         android:key="headset_connect_player"
         android:title="@string/headset_connect_player_title"
-        android:summary="@string/headset_connect_player_summary"
-        android:defaultValue="false" />  
+        android:dialogTitle="@string/headset_connect_player_title"
+        android:entries="@array/headset_connect_player_entries"
+        android:entryValues="@array/headset_connect_player_values"
+        android:defaultValue="0"
+        android:summary="%s" />  
 
     <!-- Smart Pixels -->
     <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
