@@ -41,6 +41,12 @@
         android:fragment="com.gzr.wolvesden.fragments.LedSettings"
         android:title="@string/leds_title" />
 
+    <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
+        android:key="less_boring_heads_up"
+        android:title="@string/less_boring_heads_up_title"
+        android:summary="@string/less_boring_heads_up_summary"
+        android:defaultValue="0" />
+
     <Preference
         android:key="audio_panel"
         android:fragment="com.gzr.wolvesden.fragments.AudioPanelSettings"
