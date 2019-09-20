@@ -248,5 +248,9 @@
     <string name="battery_percentage_off">Disabled</string>
     <string name="battery_percentage_on">Enabled</string>
     <string name="battery_percentage_charging">Enabled (While charging)</string>
+
+    <!-- Navbar -->
+    <string name="navbar_title">Navigation bar</string>
+    <string name="navbar_invert_layout_title">Invert layout</string>
     
 </resources>
