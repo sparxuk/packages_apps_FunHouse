@@ -44,6 +44,11 @@
                 android:targetClass="com.android.systemui.tuner.StatusbarItemsActivity" />
     </Preference>
 
+    <Preference
+        android:key="lte_switch"
+        android:fragment="com.gzr.funhouse.fragments.LTESwitch"
+        android:title="@string/lte_switch_title" />
+
     <com.gzr.funhouse.preference.SystemSettingSwitchPreference
         android:key="double_tap_sleep_gesture"
         android:title="@string/double_tap_sleep_gesture_title"

@@ -341,4 +341,9 @@
     <string name="custom_button_lights_summary">Activate to adopt screen brightness level</string>
     <string name="custom_button_brightness_title">Set brightness manually</string>
 
+    <!-- Show LTE/4G switch -->
+    <string name="lte_switch_title">LTE switch</string>
+    <string name="show_lte_fourgee_title">4G/LTE network icon</string>
+    <string name="show_lte_fourgee_summary">Display the 4G or LTE network icon when available in the statusbar</string>
+
 </resources>
