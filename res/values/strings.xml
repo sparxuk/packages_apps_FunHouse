@@ -252,5 +252,9 @@
     <!-- Navbar -->
     <string name="navbar_title">Navigation bar</string>
     <string name="navbar_invert_layout_title">Invert layout</string>
+
+    <!-- Charging animation -->
+    <string name="charging_animation_title">Charging animation</string>
+    <string name="charging_animation_summary">Display an animation when the device is plugged in</string>
     
 </resources>
