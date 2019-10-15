@@ -46,6 +46,10 @@ public class System extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        addPreferencesFromResource(R.xml.system);
+
+        ContentResolver resolver = getActivity().getContentResolver();
     }
 
     @Override
