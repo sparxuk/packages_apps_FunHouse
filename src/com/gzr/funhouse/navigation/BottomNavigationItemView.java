@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.gzr.wolvesden.navigation;
+package com.gzr.funhouse.navigation;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
