@@ -23,10 +23,4 @@
         android:summary="@string/global_actions_summary"
         android:fragment="com.gzr.funhouse.fragments.GlobalActionsSettings" />
 
-    <com.gzr.funhouse.preference.SystemSettingSwitchPreference
-        android:key="advanced_reboot"
-        android:title="@string/global_actions_advanced_reboot_title"
-        android:summary="@string/global_actions_advanced_reboot_summary"
-        android:defaultValue="true" />
-
 </PreferenceScreen>
