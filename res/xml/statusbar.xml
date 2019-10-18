@@ -17,4 +17,9 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <Preference
+        android:key="statusbar_logo"
+        android:fragment="com.gzr.funhouse.fragments.StatusBarLogoSettings"
+        android:title="@string/statusbar_logo_title" />
+
 </PreferenceScreen>

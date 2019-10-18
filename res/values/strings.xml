@@ -70,4 +70,11 @@
     <string name="set">Set</string>
     <string name="color_default">Default</string>
 
+    <!-- Validus statusbar logo -->
+    <string name="statusbar_logo_title">Statusbar logo</string>
+    <string name="logo_style_category_title">Logo options</string>
+    <string name="status_bar_logo_title">Validus logo</string>
+    <string name="status_bar_logo_summary">Enable to show Validus logo on statusbar</string>
+    <string name="status_bar_logo_style_title">Validus logo style</string>
+
 </resources>
