@@ -33,4 +33,9 @@
         android:summary="@string/global_actions_summary"
         android:fragment="com.gzr.funhouse.fragments.GlobalActionsSettings" />
 
+    <Preference
+        android:key="various_system"
+        android:fragment="com.gzr.funhouse.fragments.ScreenOffAnim"
+        android:title="@string/screen_off_animation_title" />
+
 </PreferenceScreen>
