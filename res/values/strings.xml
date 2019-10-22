@@ -253,6 +253,8 @@
     <!-- Navbar -->
     <string name="navbar_title">Navigation bar</string>
     <string name="navbar_invert_layout_title">Invert layout</string>
+    <!-- Enable navbar -->
+    <string name="enable_navbar_title">Enable navbar</string>
 
     <!-- Charging animation -->
     <string name="charging_animation_title">Charging animation</string>

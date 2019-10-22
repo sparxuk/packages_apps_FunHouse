@@ -24,6 +24,12 @@
                 android:targetClass="com.android.systemui.tuner.NavBarActivity" />
     </Preference>
 
+    <SwitchPreference
+        android:key="enable_nav_bar"
+        android:title="@string/enable_navbar_title"
+        android:defaultValue="true"
+        android:persistent="false" />
+
     <com.gzr.funhouse.preference.SecureSettingSwitchPreference
             android:key="sysui_nav_bar_inverse"
             android:title="@string/navbar_invert_layout_title"
