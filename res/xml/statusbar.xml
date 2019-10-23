@@ -21,5 +21,10 @@
         android:key="statusbar_logo"
         android:fragment="com.gzr.funhouse.fragments.StatusBarLogoSettings"
         android:title="@string/statusbar_logo_title" />
+       
+    <Preference
+        android:key="network_traffic_state"
+        android:title="@string/network_traffic_title"
+        android:fragment="com.gzr.funhouse.fragments.NetworkTraffic" />
 
 </PreferenceScreen>
