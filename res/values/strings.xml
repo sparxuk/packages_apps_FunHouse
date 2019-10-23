@@ -83,4 +83,13 @@
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Scale</string>
 
+    <!-- Statusbar net monitor -->
+    <string name="network_traffic_category">Network traffic</string>
+    <string name="network_traffic_title">Statusbar network activity</string>
+    <string name="network_traffic_summary">Show network activity in the normal status bar</string>
+    <string name="network_traffic_expanded_status_bar_title">Expanded statusbar network activity</string>
+    <string name="network_traffic_expanded_status_bar_summary">Show network activity in the status bar above quick settings</string>
+    <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold</string>
+    <string name="network_traffic_autohide_threshold_kbs">kB/s</string>
+
 </resources>
