@@ -18,10 +18,15 @@
 
     <!-- Validus Logo -->
     <string-array name="status_bar_logo_style_entries">
+        <item>Marty</item>
+        <item>GZR Clown</item>
+        <item>Big Top</item>
+        <item>Top Hat</item>
+        <item>GZR V</item>
+        <item>GZR Star</item>
         <item>Wolf Shield</item>
         <item>GZR Skull</item>
         <item>GZR Circle</item>
-        <item>GZR Clown</item>
         <item>Running Wolf</item>
         <item>Oreo Wolf</item>
     </string-array>
@@ -33,6 +38,11 @@
         <item>3</item>
         <item>4</item>
         <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
     </string-array>
 
     <!-- Screen off animation -->
