@@ -47,4 +47,10 @@
          android:summary="@string/doze_on_charge_summary"
          android:defaultValue="false" />
 
+    <com.gzr.funhouse.preference.SecureSettingSwitchPreference
+        android:key="lockscreen_visualizer_enabled"
+        android:title="@string/lockscreen_visualizer_enable"
+        android:summary="@string/lockscreen_visualizer_enable_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
