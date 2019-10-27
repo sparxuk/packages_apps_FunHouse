@@ -46,7 +46,12 @@ public class Lockscreen extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        addPreferencesFromResource(R.xml.lockscreen);
+
+        ContentResolver resolver = getActivity().getContentResolver();
     }
+
 
     @Override
     public int getMetricsCategory() {
