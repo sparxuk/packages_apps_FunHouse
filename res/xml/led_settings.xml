@@ -17,8 +17,8 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <Preference
-                android:key="charging_light"
-                android:fragment="com.gzr.funhouse.fragments.BatteryLightSettings"
-                android:title="@string/battery_light_settings" />
+        android:key="charging_light"
+        android:fragment="com.gzr.funhouse.fragments.BatteryLightSettings"
+        android:title="@string/battery_light_settings" />
 
 </PreferenceScreen>
