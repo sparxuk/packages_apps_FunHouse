@@ -167,4 +167,10 @@
     <string name="doze_on_charge_title">AOD on charging</string>
     <string name="doze_on_charge_summary">Enable to show AOD when charging</string>
 
+    <!-- Hostname setting -->
+    <string name="device_hostname">Device hostname</string>
+    <string name="device_hostname_summary">Modify device hostname used in ip resolution, useful when connecting to this device in a dynamic dhcp environment</string>
+    <string name="menu_cancel">Cancel</string>
+    <string name="menu_save">Save</string>
+    
 </resources>

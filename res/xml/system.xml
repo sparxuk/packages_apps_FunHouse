@@ -47,4 +47,16 @@
         android:summary="%s"
         android:defaultValue="1" />
 
+    <com.gzr.funhouse.preference.HostnamePreference
+        android:key="device_hostname"
+        android:title="@string/device_hostname"
+        android:summary="@string/device_hostname_summary"
+        android:dialogTitle="@string/device_hostname"
+        android:positiveButtonText="@string/menu_save"
+        android:negativeButtonText="@string/menu_cancel"
+        android:selectAllOnFocus="true"
+        android:imeOptions="actionDone"
+        android:inputType="textNoSuggestions"
+        android:persistent="false" />
+
 </PreferenceScreen>
