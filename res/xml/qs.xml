@@ -34,6 +34,11 @@
         android:fragment="com.gzr.funhouse.fragments.QSPanel"
         android:title="@string/qspanel_title" />
 
+    <Preference
+        android:key="statusbar_header"
+        android:fragment="com.gzr.funhouse.fragments.StatusBarHeader"
+        android:title="@string/statusbar_header_title" />
+
     <com.gzr.funhouse.preference.SecureSettingSwitchPreference
         android:key="qs_status_bar_bg_transparency"
         android:title="@string/tuner_status_bar_bg_transparency"
