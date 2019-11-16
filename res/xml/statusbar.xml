@@ -28,6 +28,11 @@
         android:title="@string/statusbar_clock_title" />
 
     <Preference
+        android:key="statusbar_battery"
+        android:fragment="com.gzr.funhouse.fragments.StatusBarBattery"
+        android:title="@string/statusbar_battery_title" />
+
+    <Preference
         android:key="statusbar_logo"
         android:fragment="com.gzr.funhouse.fragments.StatusBarLogoSettings"
         android:title="@string/statusbar_logo_title" />
