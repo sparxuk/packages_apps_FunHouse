@@ -26,14 +26,19 @@
         android:summary="@string/network_traffic_summary"
         android:defaultValue="false" />
 
+    <com.gzr.funhouse.preference.SystemSettingSwitchPreference
+        android:key="network_traffic_expanded_status_bar_state"
+        android:title="@string/network_traffic_expanded_status_bar_title"
+        android:summary="@string/network_traffic_expanded_status_bar_summary"
+        android:defaultValue="false" />
+
     <com.gzr.funhouse.preference.CustomSeekBarPreference
         android:key="network_traffic_autohide_threshold"
         android:title="@string/network_traffic_autohide_threshold_title"
         android:max="100"
         settings:min="0"
         settings:units=""
-        android:defaultValue="1"
-        android:dependency="network_traffic_state" />
+        android:defaultValue="1" />
 
     </PreferenceCategory>
 

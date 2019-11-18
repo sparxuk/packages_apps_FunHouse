@@ -46,6 +46,7 @@ public class NetworkTraffic extends SettingsPreferenceFragment implements
 
     private CustomSeekBarPreference mThreshold;
     private SystemSettingSwitchPreference mNetMonitor;
+    private SystemSettingSwitchPreference mNetMonitorExp;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -60,6 +61,12 @@ public class NetworkTraffic extends SettingsPreferenceFragment implements
         mNetMonitor = (SystemSettingSwitchPreference) findPreference("network_traffic_state");
         mNetMonitor.setChecked(isNetMonitorEnabled);
         mNetMonitor.setOnPreferenceChangeListener(this);
+
+        boolean isNetMonitorExpEnabled = Settings.System.getIntForUser(resolver,
+                Settings.System.NETWORK_TRAFFIC_EXPANDED_STATUS_BAR_STATE, 1, UserHandle.USER_CURRENT) == 1;
+        mNetMonitorExp = (SystemSettingSwitchPreference) findPreference("network_traffic_expanded_status_bar_state");
+        mNetMonitorExp.setChecked(isNetMonitorExpEnabled);
+        mNetMonitorExp.setOnPreferenceChangeListener(this);
 
         int value = Settings.System.getIntForUser(resolver,
                 Settings.System.NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD, 1, UserHandle.USER_CURRENT);
@@ -87,6 +94,14 @@ public class NetworkTraffic extends SettingsPreferenceFragment implements
                     Settings.System.NETWORK_TRAFFIC_STATE, value ? 1 : 0,
                     UserHandle.USER_CURRENT);
             mNetMonitor.setChecked(value);
+            mThreshold.setEnabled(value);
+            return true;
+        } else if (preference == mNetMonitorExp) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putIntForUser(getActivity().getContentResolver(),
+                    Settings.System.NETWORK_TRAFFIC_EXPANDED_STATUS_BAR_STATE, value ? 1 : 0,
+                    UserHandle.USER_CURRENT);
+            mNetMonitorExp.setChecked(value);
             mThreshold.setEnabled(value);
             return true;
         } else if (preference == mThreshold) {
