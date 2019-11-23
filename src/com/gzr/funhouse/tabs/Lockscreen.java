@@ -42,7 +42,8 @@ public class Lockscreen extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
     private static final String TAG = "Lockscreen";
-
+    private static final String KEY_DOZE_ON_CHARGE = "doze_on_charge";    
+    
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,6 +51,14 @@ public class Lockscreen extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.lockscreen);
 
         ContentResolver resolver = getActivity().getContentResolver();
+
+        boolean dozeAlwaysOnDisplayAvailable = getContext().getResources().
+                getBoolean(com.android.internal.R.bool.config_dozeAlwaysOnDisplayAvailable);
+        Preference DozeOnCharge = findPreference(KEY_DOZE_ON_CHARGE);
+
+        if (!dozeAlwaysOnDisplayAvailable){
+            DozeOnCharge.getParent().removePreference(DozeOnCharge);
+        }
     }
 
 
@@ -72,4 +81,5 @@ public class Lockscreen extends SettingsPreferenceFragment implements
         final String key = preference.getKey();
         return false;
     }
+
 }

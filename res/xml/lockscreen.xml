@@ -33,4 +33,11 @@
         android:fragment="com.gzr.funhouse.fragments.LockScreenBlur"
         android:title="@string/lockscreen_media_blur" />
 
+    <!-- Always On when charging-->
+    <com.gzr.funhouse.preference.SystemSettingSwitchPreference
+         android:key="doze_on_charge"
+         android:title="@string/doze_on_charge_title"
+         android:summary="@string/doze_on_charge_summary"
+         android:defaultValue="false" />
+
 </PreferenceScreen>

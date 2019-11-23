@@ -162,4 +162,9 @@
     <string name="toast_SlideLeftRight_animation">Slide left to right</string>
     <string name="toast_SlideRightLeft_animation">Slide right to left</string>
     <string name="toast_animation_test">This is test for selected toast animation</string>
+
+    <!-- doze on charge -->
+    <string name="doze_on_charge_title">AOD on charging</string>
+    <string name="doze_on_charge_summary">Enable to show AOD when charging</string>
+
 </resources>
