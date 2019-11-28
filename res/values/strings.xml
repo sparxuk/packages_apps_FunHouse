@@ -321,4 +321,10 @@
     <string name="system_proxi_check_enabled_title">Proximity check</string>
     <string name="system_proxi_check_enabled_summary">Check proximity sensor before handling power button and volume button wake events</string>
 
+    <!-- QS footer text -->
+    <string name="footer_text_title">QS Footer text</string>
+    <string name="validus_footer_text_show_title">Show QS footer text</string>
+    <string name="validus_footer_text_string_title">Customize footer text</string>
+    <string name="validus_footer_text_string_summary">Set to empty for default #Validus</string>
+
 </resources>
