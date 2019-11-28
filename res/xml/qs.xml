@@ -24,6 +24,11 @@
         android:entryValues="@array/quick_pulldown_values"
         android:defaultValue="0" />
 
+    <Preference
+        android:key="footer_text"
+        android:fragment="com.gzr.funhouse.fragments.FooterText"
+        android:title="@string/footer_text_title" />
+
     <com.gzr.funhouse.preference.SecureSettingSwitchPreference
         android:key="qs_status_bar_bg_transparency"
         android:title="@string/tuner_status_bar_bg_transparency"
