@@ -23,6 +23,11 @@
         android:defaultValue="true" />
 
     <Preference
+        android:key="statusbar_clock_date"
+        android:fragment="com.gzr.funhouse.fragments.ClockOptions"
+        android:title="@string/statusbar_clock_title" />
+
+    <Preference
         android:key="statusbar_logo"
         android:fragment="com.gzr.funhouse.fragments.StatusBarLogoSettings"
         android:title="@string/statusbar_logo_title" />
