@@ -16,18 +16,18 @@
 
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
+ 
     <item
         android:id="@+id/system"
         android:icon="@drawable/funhouse_system"
         android:title="@string/system_category"
         app:showAsAction="ifRoom|withText"/>
 
-    <item
+   <!-- <item
         android:id="@+id/style"
         android:icon="@drawable/funhouse_style"
         android:title="@string/style_category"
-        app:showAsAction="ifRoom|withText"/>
+        app:showAsAction="ifRoom|withText"/> -->
 
     <item
         android:id="@+id/lockscreen"
