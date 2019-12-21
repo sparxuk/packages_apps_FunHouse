@@ -42,6 +42,11 @@
         android:key="various_system"
         android:fragment="com.gzr.funhouse.fragments.ScreenOffAnim"
         android:title="@string/screen_off_animation_title" />
+
+    <Preference
+        android:key="pocket_mode"
+        android:fragment="com.gzr.funhouse.fragments.PocketMode"
+        android:title="@string/pocket_mode_title" />
     
     <com.gzr.funhouse.preference.SystemSettingListPreference
         android:key="toast_animation"
