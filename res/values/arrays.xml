@@ -29,6 +29,7 @@
         <item>GZR Circle</item>
         <item>Running Wolf</item>
         <item>Oreo Wolf</item>
+        <item>OnePlus</item>
     </string-array>
 
     <string-array name="status_bar_logo_style_values" translatable="false">
@@ -43,6 +44,7 @@
         <item>8</item>
         <item>9</item>
         <item>10</item>
+        <item>11</item>
     </string-array>
 
     <!-- Screen off animation -->
