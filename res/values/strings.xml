@@ -316,4 +316,9 @@
     <string name="tuner_status_bar_bg_transparency">Transparent status bar background</string>
     <string name="qs_status_bar_transparency">Activate to set to transparent</string>
 
+    <!-- Proximity check -->
+    <string name="pocket_mode_title">Pocket Mode</string>
+    <string name="system_proxi_check_enabled_title">Proximity check</string>
+    <string name="system_proxi_check_enabled_summary">Check proximity sensor before handling power button and volume button wake events</string>
+
 </resources>
