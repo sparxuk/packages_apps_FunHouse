@@ -38,14 +38,18 @@ import com.android.settings.Utils;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 
-public class Style extends SettingsPreferenceFragment implements
+public class QuickSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
-    private static final String TAG = "Style";
+    private static final String TAG = "qs";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        addPreferencesFromResource(R.xml.qs);
+
+        ContentResolver resolver = getActivity().getContentResolver();
     }
 
     @Override
