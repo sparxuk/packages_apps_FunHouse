@@ -23,16 +23,16 @@
         android:title="@string/system_category"
         app:showAsAction="ifRoom|withText"/>
 
-   <item
-        android:id="@+id/qs"
-        android:icon="@drawable/funhouse_qs"
-        android:title="@string/qs_category"
-        app:showAsAction="ifRoom|withText"/>
-
     <item
         android:id="@+id/lockscreen"
         android:icon="@drawable/funhouse_lock_screen"
         android:title="@string/lockscreen_category"
+        app:showAsAction="ifRoom|withText"/>
+
+    <item
+        android:id="@+id/qs"
+        android:icon="@drawable/funhouse_qs"
+        android:title="@string/qs_category"
         app:showAsAction="ifRoom|withText"/>
 
     <item

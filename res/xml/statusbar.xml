@@ -17,11 +17,6 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <com.gzr.funhouse.preference.SystemSettingSwitchPreference
-        android:key="double_tap_sleep_gesture"
-        android:title="@string/double_tap_sleep_gesture_title"
-        android:defaultValue="true" />
-
     <Preference
         android:key="statusbar_clock_date"
         android:fragment="com.gzr.funhouse.fragments.ClockOptions"
@@ -41,6 +36,11 @@
         android:key="network_traffic_state"
         android:title="@string/network_traffic_title"
         android:fragment="com.gzr.funhouse.fragments.NetworkTraffic" />
+
+    <com.gzr.funhouse.preference.SystemSettingSwitchPreference
+        android:key="double_tap_sleep_gesture"
+        android:title="@string/double_tap_sleep_gesture_title"
+        android:defaultValue="true" />
 
     <com.gzr.funhouse.preference.SystemSettingSwitchPreference
         android:key="three_finger_gesture"

@@ -17,6 +17,11 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <Preference
+        android:key="lockscreen_blur"
+        android:fragment="com.gzr.funhouse.fragments.LockScreenBlur"
+        android:title="@string/lockscreen_media_blur" />
+
     <com.gzr.funhouse.preference.SystemSettingSwitchPreference
         android:key="double_tap_sleep_lockscreen"
         android:title="@string/double_tap_sleep_lockscreen"
@@ -27,11 +32,6 @@
         android:title="@string/wakeup_when_plugged_unplugged_title"
         android:summary="@string/wakeup_when_plugged_unplugged_summary"
         android:defaultValue="true" />
-
-    <Preference
-        android:key="lockscreen_blur"
-        android:fragment="com.gzr.funhouse.fragments.LockScreenBlur"
-        android:title="@string/lockscreen_media_blur" />
 
     <!-- Always On when charging-->
     <com.gzr.funhouse.preference.SystemSettingSwitchPreference
