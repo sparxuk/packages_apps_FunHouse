@@ -42,7 +42,7 @@ import com.android.settings.SettingsPreferenceFragment;
 
 import com.gzr.funhouse.navigation.BottomNavigationViewCustom;
 import com.gzr.funhouse.tabs.System;
-//import com.gzr.funhouse.tabs.Style;
+import com.gzr.funhouse.tabs.QuickSettings;
 import com.gzr.funhouse.tabs.Lockscreen;
 import com.gzr.funhouse.tabs.StatusBar;
 import com.gzr.funhouse.tabs.Navigation;
@@ -74,17 +74,17 @@ public class FunHouse extends SettingsPreferenceFragment {
                     case R.id.system:
                         viewPager.setCurrentItem(0);
                         return true;
-                    //case R.id.style:
-                        //viewPager.setCurrentItem(1);
-                        //return true;
-                    case R.id.lockscreen:
+                    case R.id.qs:
                         viewPager.setCurrentItem(1);
                         return true;
-                    case R.id.statusbar:
+                    case R.id.lockscreen:
                         viewPager.setCurrentItem(2);
                         return true;
-                    case R.id.navigation:
+                    case R.id.statusbar:
                         viewPager.setCurrentItem(3);
+                        return true;
+                    case R.id.navigation:
+                        viewPager.setCurrentItem(4);
                         return true;
                 }
                 return false;
@@ -125,10 +125,10 @@ public class FunHouse extends SettingsPreferenceFragment {
         PagerAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new System();
-            //frags[1] = new Style();
-            frags[1] = new Lockscreen();
-            frags[2] = new StatusBar();
-            frags[3] = new Navigation();
+            frags[1] = new QuickSettings();
+            frags[2] = new Lockscreen();
+            frags[3] = new StatusBar();
+            frags[4] = new Navigation();
 
         }
 
@@ -152,7 +152,7 @@ public class FunHouse extends SettingsPreferenceFragment {
         String titleString[];
         titleString = new String[]{
                     getString(R.string.system_category),
-                    //getString(R.string.style_category),
+                    getString(R.string.qs_category),
                     getString(R.string.lockscreen_category),
                     getString(R.string.statusbar_category),
                     getString(R.string.navigation_category)};
