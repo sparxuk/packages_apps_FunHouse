@@ -12,8 +12,8 @@
 -->
 
 <PreferenceScreen
-
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/network_traffic_category"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <PreferenceCategory
