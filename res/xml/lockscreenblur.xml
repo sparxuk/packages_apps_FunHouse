@@ -12,8 +12,8 @@
 -->
 
 <PreferenceScreen
-
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/lockscreen_media_blur"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <com.gzr.funhouse.preference.CustomSeekBarPreference
