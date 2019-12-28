@@ -269,7 +269,7 @@
     <string name="qs_show_minmax_brightness_summary">Show + - brightness control buttons near the slider</string>
 
     <!-- Volume rocker music control -->
-    <string name="button_title">Button</string>
+    <string name="button_title">Volume keys</string>
     <string name="volume_rocker_music_controls_title">Playback control</string>
     <string name="volume_rocker_music_controls_summary">When the screen is off, long-pressing the volume keys will seek music tracks</string>
 
