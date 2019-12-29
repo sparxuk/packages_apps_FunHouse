@@ -311,5 +311,9 @@
     <string name="lockscreen_solid_units_count_title">Lines count</string>
     <string name="lockscreen_solid_fudge_factor_title">Sanity level</string>
     <string name="lockscreen_solid_units_opacity_title">Lines opacity</string>
-    
+
+    <!-- Transparent qs statusbar -->
+    <string name="tuner_status_bar_bg_transparency">Transparent status bar background</string>
+    <string name="qs_status_bar_transparency">Activate to set to transparent</string>
+
 </resources>
