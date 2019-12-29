@@ -25,6 +25,12 @@
         android:defaultValue="0" />
 
     <com.gzr.funhouse.preference.SecureSettingSwitchPreference
+        android:key="qs_status_bar_bg_transparency"
+        android:title="@string/tuner_status_bar_bg_transparency"
+        android:summary="@string/qs_status_bar_transparency"
+        android:defaultValue="false" />
+
+    <com.gzr.funhouse.preference.SecureSettingSwitchPreference
         android:key="qs_show_brightness"
         android:title="@string/qs_show_brightness_title"
         android:summary="@string/qs_show_brightness_summary"
