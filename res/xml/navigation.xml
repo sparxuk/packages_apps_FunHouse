@@ -34,4 +34,9 @@
         android:fragment="com.gzr.funhouse.fragments.Button"
         android:title="@string/button_title" />
 
+    <Preference
+        android:key="custom_back_lights"
+        android:fragment="com.gzr.funhouse.fragments.ButtonBacklights"
+        android:title="@string/custom_back_lights_title" />
+
 </PreferenceScreen>
