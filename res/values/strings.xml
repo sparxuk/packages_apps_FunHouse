@@ -346,4 +346,8 @@
     <string name="show_lte_fourgee_title">4G/LTE network icon</string>
     <string name="show_lte_fourgee_summary">Display the 4G or LTE network icon when available in the statusbar</string>
 
+    <!-- Lock icon -->
+    <string name="hide_lockicon_title">Hide lock icon</string>
+    <string name="hide_lockicon_summary">Hide the lock icon on lockscreen</string>
+
 </resources>
