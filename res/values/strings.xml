@@ -423,4 +423,8 @@
     <string name="qs_bg_accent_title">Use Accent color</string>
     <string name="qs_bg_accent_summary">Set QS background color from System Accent</string>
 
+    <!-- QS blur -->
+    <string name="blur_quicksettings">Blur behind quick settings (beta)</string>
+    <string name="blur_quicksettings_subtitle">blurs darkened background behind quick settings</string>
+
 </resources>
