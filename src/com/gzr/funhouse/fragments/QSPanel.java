@@ -36,11 +36,16 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.gzr.funhouse.preference.SystemSettingSeekBarPreference;
 import com.gzr.funhouse.preference.CustomSeekBarPreference;
 
+import net.margaritov.preference.colorpicker.ColorPickerPreference;
+
 public class QSPanel extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     private static final String KEY_QS_PANEL_ALPHA = "qs_panel_alpha";
+    private static final String QS_PANEL_COLOR = "qs_panel_color";
+    static final int DEFAULT_QS_PANEL_COLOR = 0xffffffff;
 
+    private ColorPickerPreference mQsPanelColor;
     private SystemSettingSeekBarPreference mQsPanelAlpha;
 
     @Override
@@ -53,6 +58,14 @@ public class QSPanel extends SettingsPreferenceFragment implements
                 Settings.System.QS_PANEL_BG_ALPHA, 221);
         mQsPanelAlpha.setValue((int)(((double) qsPanelAlpha / 255) * 100));
         mQsPanelAlpha.setOnPreferenceChangeListener(this);
+
+        mQsPanelColor = (ColorPickerPreference) findPreference(QS_PANEL_COLOR);
+        mQsPanelColor.setOnPreferenceChangeListener(this);
+        int intColor = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.QS_PANEL_BG_COLOR, DEFAULT_QS_PANEL_COLOR, UserHandle.USER_CURRENT);
+        String hexColor = String.format("#%08x", (0xffffffff & intColor));
+        mQsPanelColor.setSummary(hexColor);
+        mQsPanelColor.setNewPreviewColor(intColor);
     }
 
     @Override
@@ -67,6 +80,14 @@ public class QSPanel extends SettingsPreferenceFragment implements
             int trueValue = (int) (((double) bgAlpha / 100) * 255);
             Settings.System.putInt(getContentResolver(),
                     Settings.System.QS_PANEL_BG_ALPHA, trueValue);
+            return true;
+        } else if (preference == mQsPanelColor) {
+            String hex = ColorPickerPreference.convertToARGB(
+                    Integer.valueOf(String.valueOf(newValue)));
+            preference.setSummary(hex);
+            int intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.QS_PANEL_BG_COLOR, intHex, UserHandle.USER_CURRENT);
             return true;
         }
         return true;
