@@ -33,6 +33,7 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
+import com.gzr.funhouse.preference.SystemSettingSeekBarPreference;
 import com.gzr.funhouse.preference.CustomSeekBarPreference;
 
 public class QSPanel extends SettingsPreferenceFragment implements
@@ -40,14 +41,14 @@ public class QSPanel extends SettingsPreferenceFragment implements
 
     private static final String KEY_QS_PANEL_ALPHA = "qs_panel_alpha";
 
-    private CustomSeekBarPreference mQsPanelAlpha;
+    private SystemSettingSeekBarPreference mQsPanelAlpha;
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.qspanel);
 
-        mQsPanelAlpha = (CustomSeekBarPreference) findPreference(KEY_QS_PANEL_ALPHA);
+        mQsPanelAlpha = (SystemSettingSeekBarPreference) findPreference(KEY_QS_PANEL_ALPHA);
         int qsPanelAlpha = Settings.System.getInt(getContentResolver(),
                 Settings.System.QS_PANEL_BG_ALPHA, 221);
         mQsPanelAlpha.setValue((int)(((double) qsPanelAlpha / 255) * 100));
