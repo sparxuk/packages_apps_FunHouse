@@ -43,10 +43,12 @@ public class QSPanel extends SettingsPreferenceFragment implements
 
     private static final String KEY_QS_PANEL_ALPHA = "qs_panel_alpha";
     private static final String QS_PANEL_COLOR = "qs_panel_color";
+    private static final String QS_BLUR_ALPHA = "qs_blur_alpha";
     static final int DEFAULT_QS_PANEL_COLOR = 0xffffffff;
 
     private ColorPickerPreference mQsPanelColor;
     private SystemSettingSeekBarPreference mQsPanelAlpha;
+    private CustomSeekBarPreference mQSBlurAlpha;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -66,6 +68,12 @@ public class QSPanel extends SettingsPreferenceFragment implements
         String hexColor = String.format("#%08x", (0xffffffff & intColor));
         mQsPanelColor.setSummary(hexColor);
         mQsPanelColor.setNewPreviewColor(intColor);
+
+        mQSBlurAlpha = (CustomSeekBarPreference) findPreference(QS_BLUR_ALPHA);
+        int qsBlurAlpha = Settings.System.getInt(getContentResolver(),
+                Settings.System.QS_BLUR_ALPHA, 100);
+        mQSBlurAlpha.setValue(qsBlurAlpha);
+        mQSBlurAlpha.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -88,6 +96,11 @@ public class QSPanel extends SettingsPreferenceFragment implements
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putIntForUser(getContentResolver(),
                     Settings.System.QS_PANEL_BG_COLOR, intHex, UserHandle.USER_CURRENT);
+            return true;
+        } else if (preference == mQSBlurAlpha) {
+            int value = (Integer) newValue;
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.QS_BLUR_ALPHA, value);
             return true;
         }
         return true;
